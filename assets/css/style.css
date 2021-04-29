@@ -13,44 +13,40 @@ header{
 main{
   position: relative;
 }
-main .hero{
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-}
-main .hero h1 {
-  margin: auto 0 ;
-  font-size: 36px;
+
+.hero .banner{
+  background: url('../img/web development.svg') center center no-repeat;
+  background-size: contain;
+  min-height: 800px;
 }
 
-main .hero h1 span{
+@media (max-height:780px) {
+  .hero{
+    margin-top: 30px;
+    text-align: center;
+    min-height: 100vh;
+  }
+  .hero .banner{
+    min-height: 400px;
+  }
+}
+.hero h1 span{
   color: #5222D0;
 }
 
-main .hero img {
-  min-width: 40vw;
-}
 main section h2{
   font-size: 36px;
   font-weight: bold;
 }
 
 main section article {
-  display: flex;
-  justify-content: space-between;
   margin-top: 100px;
   margin-bottom: 100px;
-
 }
 
 
 main section article p{
-  margin: auto 0;
-  width: 40%;
   font-size: 18px;
   line-height: 2.5;
 }
 
-main section article img{
-  width: 30%;
-}
