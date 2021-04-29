@@ -1,3 +1,56 @@
 body{
   font-family: Poppins;
 }
+
+header{
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.navbar-nav{
+  text-align: right;
+  margin-left: auto;
+}
+main{
+  position: relative;
+}
+main .hero{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+main .hero h1 {
+  margin: auto 0 ;
+  font-size: 36px;
+}
+
+main .hero h1 span{
+  color: #5222D0;
+}
+
+main .hero img {
+  min-width: 40vw;
+}
+main section h2{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+main section article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+
+main section article p{
+  margin: auto 0;
+  width: 40%;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+main section article img{
+  width: 30%;
+}
