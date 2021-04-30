@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
     <title>Faishal Setiawan | Portofolio</title>
 
     <!-- Google Font -->
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header class="fixed-top">
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <a class="navbar-brand" href="#">FAISHAL SETIAWAN</a>
@@ -26,16 +27,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link skills" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projet">Project</a>
+                <a class="nav-link" href="#project">Project</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -45,8 +46,6 @@
         </div>
       </nav>
     </header>
-    <div class="pt-4"></div>
-    <div class="pt-4"></div>
     <div class="hero container row d-flex justify-content-between mx-auto">
       <h1 class="title col-lg-6 my-auto">
         Hello, <br />
@@ -58,7 +57,11 @@
     <!-- Start Main -->
     <main class="container">
       <div class="container">
-        <section>
+        <section id="about">
+          <div class="pt-4"></div>
+          <div class="pt-4"></div>
+          <div class="pt-4"></div>
+
           <h2 class="text-center">About</h2>
           <article class="row col-lg-12 d-flex justify-content-between">
             <img class="col-lg-4 img-fluid" src="./assets/img/webdesign build website 2.svg" alt="" srcset="" />
@@ -73,29 +76,86 @@
             </div>
           </article>
         </section>
-        <section>
+        <section id="skills">
           <h2 class="text-center">My Skills</h2>
+          <div class="row justify-content-around text-center">
+            <div class="skill col-lg-3">
+              <img src="./assets/img/skills/development .png" alt="" srcset="" />
+              <h3>Web Developer</h3>
+            </div>
+            <div class="skill col-lg-3">
+              <img src="./assets/img/skills/ui.png" alt="" srcset="" />
+              <h3>UI/UX Design</h3>
+            </div>
+            <div class="skill col-lg-3">
+              <img src="./assets/img/skills/seo.png" alt="" srcset="" />
+              <h3>SEO</h3>
+            </div>
+            <div class="skill col-lg-3">
+              <img src="./assets/img/skills/pwa.png" alt="" srcset="" />
+              <h3>PWA</h3>
+            </div>
+            <div class="skill col-lg-3">
+              <img src="./assets/img/skills/team.png" alt="" srcset="" />
+              <h3>Team Work</h3>
+            </div>
+            <div class="skill col-lg-3">
+              <img src="./assets/img/skills/data.png" alt="" srcset="" />
+              <h3>Data Visualization</h3>
+            </div>
+          </div>
         </section>
-        <section>
+        <section id="project">
           <h2 class="text-center">Project</h2>
           <article class="row col-lg-12 d-flex justify-content-between">
-            <img class="col-lg-4 img-fluid" src="./assets/img/webdesign build website 2.svg" alt="" srcset="" />
-            <p class="col-lg-4 my-auto float-start">My passion is making something complex to simple and enthusiastic about the new technology.</p>
+            <div class="col-lg-4 position-relative">
+              <div class="back-border"></div>
+              <img class="img-fluid" src="./assets/img/project1.png" alt="" srcset="" />
+            </div>
+            <div class="desc col-lg-4 my-auto float-start">
+              <h3>
+                Get Weather <a href="https://faishalsetiawan.me/getweather" target="_blank"><i class="bi bi-link"></i></a>
+              </h3>
+              <p>Get Weather is a Website serve weather condition. This Website build with bootstrap5, webpack, css, html, node, etc..</p>
+            </div>
           </article>
           <article class="row col-lg-12 d-flex justify-content-between">
             <div class="col-lg-4 order-1 order-lg-2">
-              <img class="img-fluid" src="./assets/img/webdesign build website 1.svg" alt="" srcset="" />
+              <img class="img-fluid" src="./assets/img/project2.png" alt="" srcset="" />
             </div>
             <div class="col-lg-4 order-2 order-lg-1">
-              <p class="my-auto">As a programmer, I always improve my skill like join tech events, do online courses (Such as Udemy, Dicoding, Youtube Video, etc.), reading books and documentation, problem-solving, and simplifying my code to make it better.</p>
+              <h3>
+                Polibatamenglishclub.org <a href="https://polibatamenglishclub.org" target="_blank"><i class="bi bi-link"></i></a>
+              </h3>
+              <p class="my-auto">This website is intended to expose the PEC organization to a better reputation. on this website you can see the information of the organization, news and contacts.</p>
             </div>
           </article>
         </section>
-        <section>
+        <section id="contact">
           <h2 class="text-center">Contact</h2>
+          <article class="row d-flex justify-content-between my-4">
+            <img class="img-fluid col-lg-4" src="./assets/img/brainstorming.svg" alt="" srcset="" />
+            <form class="col-lg-6">
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Message</label>
+                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-dark">Submit <i class="bi bi-forward"></i></button>
+            </form>
+          </article>
         </section>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script></script>
   </body>
 </html>
