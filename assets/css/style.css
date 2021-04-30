@@ -206,4 +206,21 @@ form .rect{
   .hero .banner{
     min-height: 400px;
   }
+  #project .img-fluid{
+    border: 2px solid #a0a0a0;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  #project .order-1 .img-fluid{
+    border: 2px solid #a0a0a0;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  #project .img-fluid:hover{
+    border: 2px solid #a0a0a0;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: ease-in 0.2s;
+    opacity: 1;
+  }
 }
