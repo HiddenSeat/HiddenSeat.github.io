@@ -24,7 +24,7 @@ main{
   min-height: 800px;
 }
 
-@media (max-height:780px) {
+@media (max-height:700px) {
   .hero{
     margin-top: 30px;
     text-align: center;
@@ -34,6 +34,8 @@ main{
     min-height: 400px;
   }
 }
+
+
 .hero h1 span{
   color: #5222D0;
 }
@@ -65,6 +67,7 @@ main section article form .form-control{
 }
 main section article form .btn{
   background-color: #ffffff;
+  border: 2px solid black;
 }
 
 #skills .skill{
@@ -188,8 +191,16 @@ form .rect{
   padding: 20px;
 }
 
-@media (max-width:1000px) {
+@media (max-width:993px) {
   .land{
     height: 1200px;
+  }
+  .hero{
+    margin-top: 30px;
+    text-align: center;
+    min-height: 100vh;
+  }
+  .hero .banner{
+    min-height: 400px;
   }
 }
