@@ -192,6 +192,9 @@ form .rect{
 }
 
 @media (max-width:993px) {
+  .navbar-brand{
+    font-size: 14px;
+  }
   .land{
     height: 1200px;
   }
