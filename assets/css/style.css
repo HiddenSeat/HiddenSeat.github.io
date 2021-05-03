@@ -227,3 +227,32 @@ form .rect{
     opacity: 1;
   }
 }
+
+.image {
+  margin: auto 0;
+  position: relative;
+}
+.image .message{
+  position: absolute;
+  top:-100px;
+  right: 0;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+  color: rgb(0, 0, 0);
+  border:2px solid black;
+  z-index: 3;
+
+}
+.image .message .triangle{
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background-color: #ffffff;
+  bottom: -30px;
+  border-bottom-left-radius:60%;
+  border:2px solid black;
+  z-index: 2;
+  border-top: none;
+}
