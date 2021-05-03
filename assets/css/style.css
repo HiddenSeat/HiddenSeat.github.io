@@ -105,7 +105,10 @@ main section article form .btn{
 #project .btn{
   border-radius: 20px;
   box-shadow: 8px 8px  #F0AE12;
-
+  max-width: 150px;
+}
+#project .btn:active{
+  box-shadow: none;
 }
 
 .profile{
