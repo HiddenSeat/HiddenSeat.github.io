@@ -15,11 +15,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/loader.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body>
+  <body onload="disableLoad()">
+    <!-- Start Loader -->
+    <div class="loader">
+      <button class="text-center d-block mx-auto mt-5 btn btn-outline-dark stuck d-none" onclick="forceHide()">Click me if u Stuck</button>
+      <div class="boxes">
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <!-- End Loader -->
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
@@ -63,14 +96,13 @@
       <div class="container">
         <section id="about">
           <h2 class="text-center">About</h2>
-
           <article class="row col-lg-12 d-flex justify-content-between">
-            <img class="col-lg-4 img-fluid" src="./assets/img/webdesign build website 2.svg" alt="" srcset="" />
+            <img class="col-lg-4 img-fluid" src="./assets/img/webdesign build website 2.svg" alt="" srcset="" data-aos="zoom-in" data-aos-duration="2000" />
             <p class="col-lg-4 my-auto float-start">My passion is making something complex to simple and enthusiastic about the new technology.</p>
           </article>
           <article class="row col-lg-12 d-flex justify-content-between">
             <div class="col-lg-4 order-1 order-lg-2">
-              <img class="img-fluid" src="./assets/img/webdesign build website 1.svg" alt="" srcset="" />
+              <img class="img-fluid" src="./assets/img/webdesign build website 1.svg" alt="" srcset="" data-aos="zoom-in" data-aos-duration="2000" />
             </div>
             <div class="col-lg-4 order-2 order-lg-1">
               <p class="my-auto">As a programmer, I always improve my skill like join tech events, do online courses (Such as Udemy, Dicoding, Youtube Video, etc.), reading books and documentation, problem-solving, and simplifying my code to make it better.</p>
@@ -79,20 +111,20 @@
         </section>
         <section id="skills">
           <h2 class="text-center">My Skills</h2>
-          <div class="row justify-content-around text-center">
-            <div class="skill col-lg-4">
+          <div class="row justify-content-around text-center" srcset="">
+            <div class="skill col-lg-4" data-aos="fade-up" data-aos-duration="2000">
               <img src="./assets/img/skills/development .png" alt="" srcset="" />
               <h3>Web Developer</h3>
             </div>
-            <div class="skill col-lg-4">
+            <div class="skill col-lg-4" data-aos="fade-up" data-aos-duration="2000">
               <img src="./assets/img/skills/ui.png" alt="" srcset="" />
               <h3>UI/UX Design</h3>
             </div>
-            <div class="skill col-lg-4">
+            <div class="skill col-lg-4" data-aos="fade-up" data-aos-duration="2000">
               <img src="./assets/img/skills/seo.png" alt="" srcset="" />
               <h3>SEO</h3>
             </div>
-            <div class="skill col-lg-4">
+            <div class="skill col-lg-4" data-aos="fade-up" data-aos-duration="2000">
               <img src="./assets/img/skills/data.png" alt="" srcset="" />
               <h3>Data Visualization</h3>
             </div>
@@ -103,7 +135,7 @@
           <article class="row col-lg-12 d-flex justify-content-between">
             <div class="col-lg-4 position-relative">
               <div class="back-border"></div>
-              <a href="https://faishalsetiawan.me/getweather" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="./assets/img/project1.png" alt="" srcset="" /></a>
+              <a href="https://faishalsetiawan.me/getweather" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="./assets/img/project1.png" alt="" srcset="" data-aos="fade-up" data-aos-duration="3000" /></a>
             </div>
             <div class="desc col-lg-4 my-auto float-start">
               <h3>
@@ -114,7 +146,7 @@
           </article>
           <article class="row col-lg-12 d-flex justify-content-between">
             <div class="col-lg-4 order-1 order-lg-2">
-              <a href="https://polibatamenglishclub.org" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="./assets/img/project2.png" alt="" srcset="" /></a>
+              <a href="https://polibatamenglishclub.org" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="./assets/img/project2.png" alt="" srcset="" data-aos="fade-up" data-aos-duration="3000" /></a>
             </div>
             <div class="col-lg-4 order-2 order-lg-1">
               <h3>
@@ -128,7 +160,7 @@
         <section id="contact">
           <h2 class="text-center">Contact</h2>
           <div class="profile text-center">
-            <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" alt="" />
+            <img src="./assets/img/contact.png" alt="" />
             <p class="my-3">M Faishal Nur Setiawan</p>
             <div class="link">
               <a class="github" href="https://github.com/HiddenSeat" target="_blank"><i class="bi bi-github"></i></a>
@@ -138,7 +170,6 @@
             </div>
           </div>
           <article class="row d-flex justify-content-between my-4">
-            
             <img class="img-fluid col-lg-4" src="./assets/img/brainstorming.svg" alt="" srcset="" />
             <form class="col-lg-6">
               <div class="form-group">
@@ -168,6 +199,21 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
       AOS.init();
+      setTimeout(() => {
+        document.querySelector(".stuck").classList.remove("d-none");
+      }, 5000);
+
+      const disableLoad = () => {
+        setTimeout(() => {
+          document.querySelector(".loader").classList.add("hidden");
+          setTimeout(() => {
+            document.querySelector(".loader").classList.add("d-none");
+          }, 2000);
+        }, 2000);
+      };
+      const forceHide = () => {
+        document.querySelector(".loader").classList.add("d-none");
+      };
     </script>
   </body>
 </html>
